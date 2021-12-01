@@ -1,0 +1,13 @@
+name: SentoDiscordBot
+version: '${project.version}'
+main: me.gushel.sentodiscordbot.SentoDiscordBot
+authors: [ gush3l ]
+depend:
+  - PlaceholderAPI
+  - Vault
+description: SentoMC KingdomCraft Discord Bot
+commands:
+  link:
+    description: SentoMC KingdomCraft Discord Bot link account command
+  sentodiscordbot:
+    description: Plugin main command

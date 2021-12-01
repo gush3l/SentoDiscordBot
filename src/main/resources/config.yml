@@ -1,0 +1,450 @@
+Bot:
+  token: OTE1MjA0ODI4Nzc3NTYyMTQy.YaYM6g.eGrpe3RVBZzv6WLMf_xJLoT6GE8
+  server-id: "763764008544239617"
+  mysql:
+    host: localhost
+    port: 3306
+    database: sentomc
+    username: username
+    password: password
+  activity:
+    type: competing
+    watching:
+      string: over the server!
+    playing:
+      string: KingdomsCraft!
+    listening:
+      string: to commands!
+    competing:
+      string: to be the best!
+    streaming:
+      string: Minecraft!
+      url: https://www.twitch.tv/minecraft
+    default:
+      string: nothing!
+  link-command:
+    description: "Use this command to link your Discord account!"
+    argument:
+      name: "code"
+      description: "Get the code from In-Game!"
+    linked-role: "915597756893110304"
+    embeds:
+      not-verified:
+        title: "Not Verified"
+        color:
+          r: 255
+          g: 0
+          b: 0
+        description: "You need to be verified in order to execute this command!"
+        footer:
+          enabled: true
+          message: SentoMC KingdomCraft Discord Bot
+        thumbnail:
+          enabled: true
+          image-link: https://www.kindpng.com/picc/m/285-2856821_discord-logo-template-hd-png-download.png
+      invalid-code:
+        title: "Invalid Code"
+        color:
+          r: 255
+          g: 0
+          b: 0
+        description: "The code you entered is invalid! Please use **/link** in game to get a valid code!!"
+        footer:
+          enabled: true
+          message: SentoMC KingdomCraft Discord Bot
+        thumbnail:
+          enabled: true
+          image-link: https://www.kindpng.com/picc/m/285-2856821_discord-logo-template-hd-png-download.png
+      already-verified:
+        title: "Invalid Code"
+        color:
+          r: 255
+          g: 0
+          b: 0
+        description: "Your Discord account is already verified!!"
+        footer:
+          enabled: true
+          message: SentoMC KingdomCraft Discord Bot
+        thumbnail:
+          enabled: true
+          image-link: https://www.kindpng.com/picc/m/285-2856821_discord-logo-template-hd-png-download.png
+      verified:
+        title: "Verified"
+        color:
+          r: 0
+          g: 255
+          b: 0
+        description: "Your Discord account has been linked to your Minecraft account!!"
+        footer:
+          enabled: true
+          message: SentoMC KingdomCraft Discord Bot
+        thumbnail:
+          enabled: true
+          image-link: https://www.kindpng.com/picc/m/285-2856821_discord-logo-template-hd-png-download.png
+  special-rank:
+    discord-role-ids:
+      - "915259487739318323"
+      - "915207361000513618"
+    denied-embed:
+      title: "Failed"
+      color:
+        r: 255
+        g: 0
+        b: 0
+      description: "You do not have any special rank!!"
+      footer:
+        enabled: true
+        message: SentoMC KingdomCraft Discord Bot
+      thumbnail:
+        enabled: true
+        image-link: https://www.kindpng.com/picc/m/285-2856821_discord-logo-template-hd-png-download.png
+    commands:
+      kingdom-kick:
+        description: "Kick someone from your Kingdom!"
+        argument:
+          name: "player"
+          description: "Enter the player''s name!"
+        embeds:
+          failed:
+            title: "Failed"
+            color:
+              r: 255
+              g: 0
+              b: 0
+            description: "You do not have any special rank!!"
+            footer:
+              enabled: true
+              message: SentoMC KingdomCraft Discord Bot
+            thumbnail:
+              enabled: true
+              image-link: https://www.kindpng.com/picc/m/285-2856821_discord-logo-template-hd-png-download.png
+          no-permission:
+            title: "Failed"
+            color:
+              r: 255
+              g: 0
+              b: 0
+            description: "You do not have the permission to do that!!"
+            footer:
+              enabled: true
+              message: SentoMC KingdomCraft Discord Bot
+            thumbnail:
+              enabled: true
+              image-link: https://www.kindpng.com/picc/m/285-2856821_discord-logo-template-hd-png-download.png
+          not-same-kingdom:
+            title: "Failed"
+            color:
+              r: 255
+              g: 0
+              b: 0
+            description: "You are not in the same kingdom as this player!!"
+            footer:
+              enabled: true
+              message: SentoMC KingdomCraft Discord Bot
+            thumbnail:
+              enabled: true
+              image-link: https://www.kindpng.com/picc/m/285-2856821_discord-logo-template-hd-png-download.png
+          player-not-found:
+            title: "Failed"
+            color:
+              r: 255
+              g: 0
+              b: 0
+            description: "The player mentioned has never played on this server!!"
+            footer:
+              enabled: true
+              message: SentoMC KingdomCraft Discord Bot
+            thumbnail:
+              enabled: true
+              image-link: https://www.kindpng.com/picc/m/285-2856821_discord-logo-template-hd-png-download.png
+          rank-level-low:
+            title: "Failed"
+            color:
+              r: 255
+              g: 0
+              b: 0
+            description: "Your rank level is too low, you can't kick this user!!"
+            footer:
+              enabled: true
+              message: SentoMC KingdomCraft Discord Bot
+            thumbnail:
+              enabled: true
+              image-link: https://www.kindpng.com/picc/m/285-2856821_discord-logo-template-hd-png-download.pnp
+          successfully:
+            title: "Kicked"
+            color:
+              r: 0
+              g: 255
+              b: 0
+            description: "Your kicked the user %username% from the kingdom %kingdom%!!"
+            footer:
+              enabled: true
+              message: SentoMC KingdomCraft Discord Bot
+            thumbnail:
+              enabled: true
+              image-link: https://www.kindpng.com/picc/m/285-2856821_discord-logo-template-hd-png-download.png
+          default:
+            title: "Error"
+            color:
+              r: 255
+              g: 0
+              b: 0
+            description: "An unexpected error occurred!!"
+            footer:
+              enabled: true
+              message: SentoMC KingdomCraft Discord Bot
+            thumbnail:
+              enabled: true
+              image-link: https://www.kindpng.com/picc/m/285-2856821_discord-logo-template-hd-png-download.png
+      kingdom-promote:
+        description: "Promote someone from your Kingdom!"
+        argument:
+          name: "player"
+          description: "Enter the player's name!"
+        excluded-ranks:
+          - "member"
+        embeds:
+          selection:
+            title: "Promote %username%"
+            color:
+              r: 0
+              g: 255
+              b: 0
+            description: "Select from the list below a rank to promote %username% to. Player's %username% current rank is: %currentRank%. "
+            footer:
+              enabled: true
+              message: SentoMC KingdomCraft Discord Bot
+            thumbnail:
+              enabled: true
+              image-link: https://www.kindpng.com/picc/m/285-2856821_discord-logo-template-hd-png-download.png
+            selection-menu-placeholder: "Select promotion rank..."
+          failed:
+            title: "Failed"
+            color:
+              r: 255
+              g: 0
+              b: 0
+            description: "You do not have any special rank!!"
+            footer:
+              enabled: true
+              message: SentoMC KingdomCraft Discord Bot
+            thumbnail:
+              enabled: true
+              image-link: https://www.kindpng.com/picc/m/285-2856821_discord-logo-template-hd-png-download.png
+          no-permission:
+            title: "Failed"
+            color:
+              r: 255
+              g: 0
+              b: 0
+            description: "You do not have the permission to do that!!"
+            footer:
+              enabled: true
+              message: SentoMC KingdomCraft Discord Bot
+            thumbnail:
+              enabled: true
+              image-link: https://www.kindpng.com/picc/m/285-2856821_discord-logo-template-hd-png-download.png
+          not-same-kingdom:
+            title: "Failed"
+            color:
+              r: 255
+              g: 0
+              b: 0
+            description: "You are not in the same kingdom as this player!!"
+            footer:
+              enabled: true
+              message: SentoMC KingdomCraft Discord Bot
+            thumbnail:
+              enabled: true
+              image-link: https://www.kindpng.com/picc/m/285-2856821_discord-logo-template-hd-png-download.png
+          player-not-found:
+            title: "Failed"
+            color:
+              r: 255
+              g: 0
+              b: 0
+            description: "The player mentioned has never played on this server!!"
+            footer:
+              enabled: true
+              message: SentoMC KingdomCraft Discord Bot
+            thumbnail:
+              enabled: true
+              image-link: https://www.kindpng.com/picc/m/285-2856821_discord-logo-template-hd-png-download.png
+          rank-level-low:
+            title: "Failed"
+            color:
+              r: 255
+              g: 0
+              b: 0
+            description: "Your rank level is too low, you can't promote this user!!"
+            footer:
+              enabled: true
+              message: SentoMC KingdomCraft Discord Bot
+            thumbnail:
+              enabled: true
+              image-link: https://www.kindpng.com/picc/m/285-2856821_discord-logo-template-hd-png-download.pnp
+          successfully:
+            title: "Promoted Successfully"
+            color:
+              r: 0
+              g: 255
+              b: 0
+            description: "Your promotoed the user %username% from the kingdom %kingdom% from the rank %oldRank% to %newRank%!!"
+            footer:
+              enabled: true
+              message: SentoMC KingdomCraft Discord Bot
+            thumbnail:
+              enabled: true
+              image-link: https://www.kindpng.com/picc/m/285-2856821_discord-logo-template-hd-png-download.png
+          demoted:
+            title: "Demoted Successfully"
+            color:
+              r: 0
+              g: 255
+              b: 0
+            description: "Your demoted the user %username% from the kingdom %kingdom% from the rank %oldRank% to %newRank%!!"
+            footer:
+              enabled: true
+              message: SentoMC KingdomCraft Discord Bot
+            thumbnail:
+              enabled: true
+              image-link: https://www.kindpng.com/picc/m/285-2856821_discord-logo-template-hd-png-download.png
+          no-rank-available:
+            title: "Failed"
+            color:
+              r: 0
+              g: 255
+              b: 0
+            description: "This user can't be promoted or demoted to any rank as there aren't any other ranks available for them!"
+            footer:
+              enabled: true
+              message: SentoMC KingdomCraft Discord Bot
+            thumbnail:
+              enabled: true
+              image-link: https://www.kindpng.com/picc/m/285-2856821_discord-logo-template-hd-png-download.png
+          default:
+            title: "Error"
+            color:
+              r: 255
+              g: 0
+              b: 0
+            description: "An unexpected error occurred!!"
+            footer:
+              enabled: true
+              message: SentoMC KingdomCraft Discord Bot
+            thumbnail:
+              enabled: true
+              image-link: https://www.kindpng.com/picc/m/285-2856821_discord-logo-template-hd-png-download.png
+  kingdom-command:
+    description: "Get information about a user!"
+    argument:
+      name: "player"
+      description: "Enter the player's name!"
+    embeds:
+      player-not-found:
+        title: "Failed"
+        color:
+          r: 255
+          g: 0
+          b: 0
+        description: "The player mentioned has never played on this server!!"
+        footer:
+          enabled: true
+          message: SentoMC KingdomCraft Discord Bot
+        thumbnail:
+          enabled: true
+          image-link: https://www.kindpng.com/picc/m/285-2856821_discord-logo-template-hd-png-download.png
+      info:
+        title: "Player Info"
+        color:
+          r: 255
+          g: 0
+          b: 0
+        description: "Player's %username% info:"
+        fields:
+          - "Player's Name:fieldValue:%username%"
+          - "Last Played:fieldValue:%lastPlayed%"
+          - "Server Join Date:fieldValue:%serverJoindate%"
+          - "Kingdom Name:fieldValue:%kingdomName%"
+          - "Kingdom Join Date:fieldValue:%kingdomJoindate%"
+          - "Kingdom Role:fieldValue:%kingdomRole%"
+          - "Kingdom Role Level:fieldValue:%kingdomRoleLevel%"
+        inline-fields: true
+        footer:
+          enabled: true
+          message: SentoMC KingdomCraft Discord Bot
+        thumbnail:
+          enabled: true
+          image-link: https://www.kindpng.com/picc/m/285-2856821_discord-logo-template-hd-png-download.png
+  kingdom-info-command:
+    description: "Get information about a kingdom!"
+    argument:
+      name: "kingdom"
+      description: "Enter the kingdom's name!"
+    embeds:
+      kingdom-not-found:
+        title: "Failed"
+        color:
+          r: 255
+          g: 0
+          b: 0
+        description: "The kingdom mentioned does not exist!!"
+        footer:
+          enabled: true
+          message: SentoMC KingdomCraft Discord Bot
+        thumbnail:
+          enabled: true
+          image-link: https://www.kindpng.com/picc/m/285-2856821_discord-logo-template-hd-png-download.png
+      info:
+        title: "Kingdom Info"
+        color:
+          r: 255
+          g: 0
+          b: 0
+        description: "Kingdom's %kingdomName% info:"
+        fields:
+          - "Name:fieldValue:%kingdomName%"
+          - "Roles:fieldValue:%kingdomRole%"
+          - "Default Role:fieldValue:%kingdomDefaultRole%"
+          - "Spawn:fieldValue:%kingdomSpawnX% %kingdomSpawnY% %kingdomSpawnZ% %kingdomSpawnWorldName%"
+          - "Role Count:fieldValue:%kingdomRolesCount%"
+          - "Members Count:fieldValue:%kingdomMemberCount%"
+          - "Max Members:fieldValue:%kingdomMaxMembers%"
+          - "Online Members:fieldValue:%kingdomOnlineMembers%"
+          - "Online Members Count:fieldValue:%kingdomOnlineMembersCount%"
+          - "Offline Members:fieldValue:%kingdomOfflineMembers%"
+          - "Offline Members Count:fieldValue:%kingdomOfflineMembersCount%"
+        inline-fields: true
+        footer:
+          enabled: true
+          message: SentoMC KingdomCraft Discord Bot
+        thumbnail:
+          enabled: true
+          image-link: https://www.kindpng.com/picc/m/285-2856821_discord-logo-template-hd-png-download.png
+Minecraft:
+  link-command:
+    code-generator:
+      range-min: 10000
+      range-max: 99999
+  kick-command:
+    perm-to-check: "kingdom.kick"
+  promote-command:
+    perm-to-check: "kingdom.setrank"
+  messages:
+    link:
+      link-new:
+        - "&aUse the code &e%linkcode% &aon Discord to link your Minecraft account to your Discord account!"
+        - "&aThe command to use on the Discord server: &e&n/link %linkcode%"
+      link-already-started:
+        - "&cYou already started the linking process! Your link code is: &e&n%linkcode%"
+      already-linked:
+        - "&cYour Minecraft account has already been linked to a Discord account!"
+    admin-commands:
+      no-permission: "&cYou can't do that!!"
+      force-unlink:
+        syntax: "&c/sentodiscordbot unlink uuid/discordID <value> <true/false>"
+        invalid-id: "&cInvalid Discord ID/UUID! The user couldn't be found on the Discord/Minecraft server! Put true at the end of the cmd to force this action!"
+        unlink: "&aUser removed forcefully from the database!"
+      force-link:
+        syntax: "&c/sentodiscordbot link <uuid> <discordID>"
+        link: "&aLinked the user succesfully!"
