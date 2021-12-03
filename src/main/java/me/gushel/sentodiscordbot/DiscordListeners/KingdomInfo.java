@@ -12,8 +12,6 @@ import net.dv8tion.jda.api.hooks.ListenerAdapter;
 import org.bukkit.configuration.file.FileConfiguration;
 import org.jetbrains.annotations.NotNull;
 
-import java.util.concurrent.ExecutionException;
-
 public class KingdomInfo extends ListenerAdapter {
 
     private FileConfiguration config = SentoDiscordBot.getInstance().getConfig();

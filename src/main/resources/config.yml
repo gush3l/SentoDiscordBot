@@ -421,6 +421,40 @@ Bot:
         thumbnail:
           enabled: true
           image-link: https://www.kindpng.com/picc/m/285-2856821_discord-logo-template-hd-png-download.png
+  kingdom-list-command:
+    description: "Get a list of kingdoms!"
+    max-to-display: 15
+    argument:
+      name: "kingdom"
+      description: "Enter the kingdom's name!"
+    embeds:
+      kingdoms-not-found:
+        title: "Failed"
+        color:
+          r: 255
+          g: 0
+          b: 0
+        description: "No kingdom with online players is available!"
+        footer:
+          enabled: true
+          message: SentoMC KingdomCraft Discord Bot
+        thumbnail:
+          enabled: true
+          image-link: https://www.kindpng.com/picc/m/285-2856821_discord-logo-template-hd-png-download.png
+      info:
+        title: "Kingdoms List"
+        color:
+          r: 0
+          g: 255
+          b: 0
+        description: "List of kingdoms with online members:"
+        kingdoms-list: "**%kingdomName%** - *%kingdomOnline%*"
+        footer:
+          enabled: true
+          message: SentoMC KingdomCraft Discord Bot
+        thumbnail:
+          enabled: true
+          image-link: https://www.kindpng.com/picc/m/285-2856821_discord-logo-template-hd-png-download.png
 Minecraft:
   link-command:
     code-generator:

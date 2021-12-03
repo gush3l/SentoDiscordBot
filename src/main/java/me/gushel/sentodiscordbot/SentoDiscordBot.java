@@ -83,6 +83,7 @@ public final class SentoDiscordBot extends JavaPlugin {
                     .addEventListeners(new KingdomPromote())
                     .addEventListeners(new KingdomInfo())
                     .addEventListeners(new SelectionListener())
+                    .addEventListeners(new KingdomList())
                     .setActivity(activity)
                     .build().awaitReady();
             CommandListUpdateAction commands = jda.getGuildById(config.getString("Bot.server-id")).updateCommands();
@@ -116,6 +117,9 @@ public final class SentoDiscordBot extends JavaPlugin {
                             .addOptions(new OptionData(STRING, config.getString("Bot.kingdom-info-command.argument.name"),
                                     config.getString("Bot.kingdom-info-command.argument.description"))
                                     .setRequired(true))
+            );
+            commands.addCommands(
+                    new CommandData("kingdom-list", config.getString("Bot.kingdom-info-command.description"))
             );
             commands.queue();
             getLogger().info("The Discord bot started succesfully!");

@@ -74,6 +74,17 @@ public class Util {
         return temp;
     }
 
+    public static HashMap<String,Integer> sortByValueK(HashMap<String,Integer> kingdomsMap) {
+        List<Map.Entry<String,Integer> > list =
+                new LinkedList<>(kingdomsMap.entrySet());
+        Collections.sort(list, Map.Entry.comparingByValue());
+        HashMap<String,Integer> temp = new LinkedHashMap<>();
+        for (Map.Entry<String,Integer> aa : list) {
+            temp.put(aa.getKey(), aa.getValue());
+        }
+        return temp;
+    }
+
     public static String replaceFieldPlaceholdersK(OfflinePlayer offlinePlayer, User kingdomUser, String message){
         Timestamp joinTS = new Timestamp(offlinePlayer.getFirstPlayed());
         Timestamp lastPlayerTS = new Timestamp(offlinePlayer.getLastPlayed());
