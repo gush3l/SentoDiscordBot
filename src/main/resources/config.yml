@@ -1,6 +1,6 @@
 Bot:
-  token: OTE1MjA0ODI4Nzc3NTYyMTQy.YaYM6g.eGrpe3RVBZzv6WLMf_xJLoT6GE8
-  server-id: "763764008544239617"
+  token: TOKEN-GOES-HERE
+  server-id: "SERVER-ID-GOES-HERE"
   mysql:
     host: localhost
     port: 3306
@@ -27,7 +27,7 @@ Bot:
     argument:
       name: "code"
       description: "Get the code from In-Game!"
-    linked-role: "915597756893110304"
+    linked-role: "LINKED-DISCORD-ROLE-GOES-HERE"
     embeds:
       not-verified:
         title: "Not Verified"
@@ -83,8 +83,7 @@ Bot:
           image-link: https://www.kindpng.com/picc/m/285-2856821_discord-logo-template-hd-png-download.png
   special-rank:
     discord-role-ids:
-      - "915259487739318323"
-      - "915207361000513618"
+      - "SPECIAL-RANKS-DISCORD-IDS-GO-HERE"
     denied-embed:
       title: "Failed"
       color:
